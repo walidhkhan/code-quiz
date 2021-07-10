@@ -1,0 +1,9 @@
+.score-list {
+    width: 50vw;
+    height: 50vw;
+    display:grid;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
