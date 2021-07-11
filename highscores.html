@@ -9,16 +9,38 @@
     <title>Highscores</title>
 </head>
 <body>
-    <div class="container">
-        <div id="home" class="flex-column flex-center">
-            <h1> Highscores </h1>
-            <!-- scores list start -->
-
-            <!-- score list end -->
-            <a href="./codequiz.html" class="btn">Play Again</a>
+    <!-- Score displays and enter initials to submit score to localStorage -->
+    <div id="score-style">
+    <div class="container" id="score">
+        <div id="end" class="flex-column flex-center">
+            <div id="score-style">
+                <h1>Your Score</h1>
+                <h1 id="finalScore">0</h1>
+                <form class="end-form-container">
+                    <h3 id=score-text>Enter your initials to save your score!</h3>
+                    <p>
+                        Initials: <input type="text" id="initials" max="3" />
+                        <button class="btn" id="saveScoreBtn" type="submit" onclick="saveHighScore(event)">Submit</button>
+                    </p>
+                </form>
+                <div id="play-again-btn">
+                    <a href="./index.html" class="btn">Play Again</a>
+                </div>
+            </div>
             <div id="results"></div>
         </div>
     </div>
+    </div>
+
+    <div id=leaderboard-style>
+        <div class="container2" id="leaderboard-style">
+            <div id="highscores" class="flex-center flex-column">
+                <h1 id="leaderBoard">Leaderboard</h1>
+                <ul id="highScoresList"></ul>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------------------------------------------------------------------------------------------------------------------------- -->
     <!-- <div class="container">
         <div id="home" class="flex-column flex-center">
             <h1 id="finalScore">
@@ -33,5 +55,6 @@
         </div>
     </div> -->
 <script src="./script.js"></script>
+<script src="./highscores.js"></script>
 </body>
 </html>

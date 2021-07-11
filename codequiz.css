@@ -12,6 +12,7 @@ body {
     background: grey;
     font-size: 3rem;
     min-width: 80rem;
+    float: center;
 }
 
 .choice-container:hover {
@@ -29,14 +30,6 @@ body {
 .choice-text {
     padding: 2rem; 
     width: 100%;
-}
-
-.correct {
-    background: linear-gradient(32deg, green) 0%, greenyellow;
-}
-
-.incorrect {
-    background: linear-gradient(32deg, red) 0%, rgb(177, 48, 48);
 }
 
 /* HUD */

@@ -1,3 +1,4 @@
+/* index start */
 :root {
     background-color: #fff;
 }
@@ -21,7 +22,7 @@ h2 {
 }
 
 h3 {
-    text-align: left;
+    text-align: center;
 }
 
 .container {
@@ -84,8 +85,46 @@ h3 {
     color: white;
 }
 
+/* timer start */
 #timer {
     position: absolute;
     top: 15px;
     left: 15px;
+    font-size: 2rem;
+    font-weight: bold;
 }
+
+
+/* highscores start */
+.score-list {
+    width: 50vw;
+    height: 50vw;
+    display:grid;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+#score-text {
+    text-align: center;
+}
+
+.end-form-container {
+    width: 100%;
+    display: inline-block;
+    align-items: center;
+}
+
+input {
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;   
+}
+/* 
+#score {
+    float: left;
+    border: 10px solid;
+    padding: 15px;
+} */

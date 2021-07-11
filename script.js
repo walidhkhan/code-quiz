@@ -5,7 +5,6 @@ let scoreText = document.querySelector("#score");
 let qustionNumber = document.querySelector("#questionNumber");
 let timeEl = document.querySelector("#timer");
 let timerId = setInterval(clockTick, 1000);
-
 let currentQuestion = {};
 let acceptingAnswers = true;
 let score = 0;
@@ -13,6 +12,8 @@ let questionCounter = 0;
 let availableQuestions = []
 let currentTime = 120;
 
+
+// Quiz questions
 let questions = [
     // Question #1
     {
@@ -60,7 +61,7 @@ let questions = [
         answer: 2,
     },
 ]
-
+// 
 let SCORE_POINTS = 20;
 let MAX_QUESTIONS = 5;
 
@@ -75,14 +76,15 @@ startGame = () => {
 getNewQuestion = () => {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
         localStorage.setItem("mostRecentScore", score);
-
-        return window.location.assign("/highscores.html");
+        
+        return window.location.assign("highscores.html");
     }
 
     // Question # counter
     questionCounter++
     progressText.innerText = `Question ${questionCounter} of ${MAX_QUESTIONS}`;
 
+    // randomize question order
     let questionsIndex = Math.floor(Math.random() * availableQuestions.length);
     currentQuestion = availableQuestions[questionsIndex];
     question.innerText = currentQuestion.question;
@@ -124,11 +126,13 @@ choices.forEach(choice => {
     });
 })
 
+// score # incrementor 
 incrementScore = num => {
     score +=num;
     scoreText.innerText = score;
 }
 
+// time decrement and game ending prompt due to timer running out
 function clockTick() {
     currentTime --;
     timeEl.textContent=`Timer: ${currentTime}`;

@@ -1,3 +1,4 @@
+/* yourscore start */
 .score-list {
     width: 50vw;
     height: 50vw;
@@ -7,3 +8,46 @@
     margin: 0 auto;
     padding: 2rem;
 }
+
+#score-text {
+    text-align: center;
+}
+
+.end-form-container {
+    width: 100%;
+    display: inline-block;
+    align-items: center;
+    padding-left: 10rem;
+}
+
+input {
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;   
+}
+
+#score-style {
+    float: left;
+    border: 5px solid;
+    padding: 15px;
+    padding-bottom: 5rem;
+    margin-bottom: 10rem;
+}
+
+#play-again-btn {
+    padding-top: 2rem;
+    display: inline-flex;
+    width: 50rem;
+    padding-left: 20rem;
+}
+
+/* leaderboard start */
+#leaderboard-style {
+    padding-top: 4rem;
+}
+
+#container2 {
+    border: 1px solid;
+}
+
