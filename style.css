@@ -22,7 +22,7 @@ h2 {
 }
 
 h3 {
-    text-align: center;
+    text-align: left;
 }
 
 .container {
@@ -122,9 +122,9 @@ input {
     padding: 1.5rem;
     font-size: 1.8rem;   
 }
-/* 
-#score {
+
+/* #score {
     float: left;
     border: 10px solid;
     padding: 15px;
-} */
+}  */
